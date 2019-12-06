@@ -1,6 +1,4 @@
 import itertools
-#from colorama import Fore, Back, Style, init
-#init()
 
 def win(current_game):
 
@@ -54,22 +52,8 @@ def game_board(game_map, player=0, row=0, column=0, just_display=False):
         if not just_display:
             game_map[row][column] = player
 
-
-
         for count, row in enumerate(game_map):
             print (count, row)
-            #colored_row = ""
-
-
-        #for item in row:
-                #if item == 0:
-                    #colored_row += "  "
-                #elif item == 1:
-                    #colored_row += Fore.GREEN + ' X ' + Style.RESET_ALL
-               # elif item == 2:
-                 #   colored_row += Fore.MAGENTA + ' O ' + Style.RESET_ALL
-
-            #print(count, colored_row)
 
 
         return game_map, True
